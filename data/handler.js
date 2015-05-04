@@ -2,7 +2,7 @@
 	app.load();
 	app.resize();
 	reloadEditor(self.options.jsonText)
-	
+
 	function reloadEditor(data){
 		app.setData(data);
 		codeEditor.format();
@@ -22,23 +22,25 @@
 
 	getE(".poweredBy").onclick = function(e){
 		e.preventDefault();
-		app.notify.showNotification("Text copied to clipboard!",1500);
+		app.notify.showNotification("Text copied to clipboard!",1000);
 		self.port.emit("copy",codeEditor.getText());
 	};
+
+	var input = getE("#inputURL");
+	input.value = decodeURIComponent(self.options.url);
+	input.focus();
+	input.onkeypress = function(e){
+		if(e.keyCode == 13){
+			btn.onclick();
+			return false;
+		}
+	}
 	
 	var btn = getE("#reloadBtn");
 	btn.onclick = function(){
 		self.port.emit("reload",input.value);
+		input.value = decodeURIComponent(input.value);
 	};
-
-	var input = getE("#inputURL");
-	input.value = self.options.url;
-	input.onkeypress = function(e){
-		if(e.keyCode == 13){
-			self.port.emit("reload",input.value);
-			return false;
-		}
-	}
 
 	self.port.on('reloadSuccess',function(txt){
 		reloadEditor(txt);
