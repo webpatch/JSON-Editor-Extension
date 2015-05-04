@@ -1,913 +1,850 @@
-.jsoneditor-contextmenu ul,
-div.prompt-border {
-    box-shadow: 2px 2px 12px rgba(128, 128, 128, .3)
+.jsoneditor-contextmenu ul, div.prompt-border {
+	box-shadow: 2px 2px 12px rgba(128,128,128,.3)
 }
-#auto,
-#codeEditor,
-#splitter,
-#treeEditor,
-.jsoneditor,
-.jsoneditor .menu,
-.jsoneditor div.outer {
-    box-sizing: border-box
+#auto, #codeEditor, #splitter, #treeEditor, .jsoneditor, .jsoneditor .menu, .jsoneditor div.outer {
+	box-sizing: border-box
 }
-#auto,
-#codeEditor,
-#splitter,
-#treeEditor,
-.jsoneditor,
-.jsoneditor .menu,
-.jsoneditor div.outer,
-.jsoneditor textarea.text {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box
+#auto, #codeEditor, #splitter, #treeEditor, .jsoneditor, .jsoneditor .menu, .jsoneditor div.outer, .jsoneditor textarea.text {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box
 }
-.jsoneditor .field,
-.jsoneditor .readonly,
-.jsoneditor .value {
-    border: 1px solid transparent;
-    min-height: 16px;
-    min-width: 32px;
-    padding: 2px;
-    margin: 1px;
-    word-wrap: break-word;
-    float: left
+.jsoneditor .field, .jsoneditor .readonly, .jsoneditor .value {
+	border: 1px solid transparent;
+	min-height: 16px;
+	min-width: 32px;
+	padding: 2px;
+	margin: 1px;
+	word-wrap: break-word;
+	float: left
 }
-.jsoneditor .field p,
-.jsoneditor .value p {
-    margin: 0
+.jsoneditor .field p, .jsoneditor .value p {
+	margin: 0
 }
 .jsoneditor .value {
-    word-break: break-word
+	word-break: break-word
 }
 .jsoneditor .readonly {
-    min-width: 16px;
-    color: gray
+	min-width: 16px;
+	color: gray
 }
 .jsoneditor .empty {
-    border-color: #d3d3d3;
-    border-style: dashed;
-    border-radius: 2px
+	border-color: #d3d3d3;
+	border-style: dashed;
+	border-radius: 2px
 }
 .jsoneditor .field.empty {
-    background-image: url(img/jsoneditor-icons.png);
-    background-position: 0 -144px
+	background-image: url(img/jsoneditor-icons.png);
+	background-position: 0 -144px
 }
 .jsoneditor .value.empty {
-    background-image: url(img/jsoneditor-icons.png);
-    background-position: -48px -144px
+	background-image: url(img/jsoneditor-icons.png);
+	background-position: -48px -144px
 }
 .jsoneditor .value.url {
-    color: green;
-    text-decoration: underline
+	color: green;
+	text-decoration: underline
 }
-#menu a,
-#menu ul li {
-    text-decoration: none
+#menu a, #menu ul li {
+	text-decoration: none
 }
-.jsoneditor a.value.url:focus,
-.jsoneditor a.value.url:hover {
-    color: red
+.jsoneditor a.value.url:focus, .jsoneditor a.value.url:hover {
+	color: red
 }
 .jsoneditor .separator {
-    padding: 3px 0;
-    vertical-align: top;
-    color: gray
+	padding: 3px 0;
+	vertical-align: top;
+	color: gray
 }
-.jsoneditor .field.highlight,
-.jsoneditor .field[contenteditable=true]:focus,
-.jsoneditor .field[contenteditable=true]:hover,
-.jsoneditor .value.highlight,
-.jsoneditor .value[contenteditable=true]:focus,
-.jsoneditor .value[contenteditable=true]:hover {
-    background-color: #FFFFAB;
-    border: 1px solid #ff0;
-    border-radius: 2px
+.jsoneditor .field.highlight, .jsoneditor .field[contenteditable=true]:focus, .jsoneditor .field[contenteditable=true]:hover, .jsoneditor .value.highlight, .jsoneditor .value[contenteditable=true]:focus, .jsoneditor .value[contenteditable=true]:hover {
+	background-color: #FFFFAB;
+	border: 1px solid #ff0;
+	border-radius: 2px
 }
-.jsoneditor .field.highlight-active,
-.jsoneditor .field.highlight-active:focus,
-.jsoneditor .field.highlight-active:hover,
-.jsoneditor .value.highlight-active,
-.jsoneditor .value.highlight-active:focus,
-.jsoneditor .value.highlight-active:hover {
-    background-color: #fe0;
-    border: 1px solid #ffc700;
-    border-radius: 2px
+.jsoneditor .field.highlight-active, .jsoneditor .field.highlight-active:focus, .jsoneditor .field.highlight-active:hover, .jsoneditor .value.highlight-active, .jsoneditor .value.highlight-active:focus, .jsoneditor .value.highlight-active:hover {
+	background-color: #fe0;
+	border: 1px solid #ffc700;
+	border-radius: 2px
 }
 .jsoneditor div.tree button {
-    width: 24px;
-    height: 24px;
-    padding: 0;
-    margin: 0;
-    border: none;
-    cursor: pointer;
-    background: url(img/jsoneditor-icons.png)
+	width: 24px;
+	height: 24px;
+	padding: 0;
+	margin: 0;
+	border: none;
+	cursor: pointer;
+	background: url(img/jsoneditor-icons.png)
 }
 .jsoneditor div.tree button.collapsed {
-    background-position: 0 -48px
+	background-position: 0 -48px
 }
 .jsoneditor div.tree button.expanded {
-    background-position: 0 -72px
+	background-position: 0 -72px
 }
 .jsoneditor div.tree button.contextmenu {
-    background-position: -48px -72px
+	background-position: -48px -72px
 }
-.jsoneditor div.tree button.contextmenu.selected,
-.jsoneditor div.tree button.contextmenu:focus,
-.jsoneditor div.tree button.contextmenu:hover {
-    background-position: -48px -48px
+.jsoneditor div.tree button.contextmenu.selected, .jsoneditor div.tree button.contextmenu:focus, .jsoneditor div.tree button.contextmenu:hover {
+	background-position: -48px -48px
 }
-.jsoneditor div.tree:focus {
-    outline: 0
+.jsoneditor div.tree :focus {
+	outline: 0
 }
 .jsoneditor div.tree button:focus {
-    background-color: #f5f5f5;
-    outline: #e5e5e5 solid 1px
+	background-color: #f5f5f5;
+	outline: #e5e5e5 solid 1px
 }
 .jsoneditor div.tree button.invisible {
-    visibility: hidden;
-    background: 0 0
+	visibility: hidden;
+	background: 0 0
 }
 .jsoneditor {
-    color: #1A1A1A;
-    border: 1px solid #97B0F8;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    position: relative;
-    padding: 0;
-    line-height: 100%
+	color: #1A1A1A;
+	border: 1px solid #97B0F8;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	position: relative;
+	padding: 0;
+	line-height: 100%
 }
 .jsoneditor div.tree table.tree {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    margin: 0
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	margin: 0
 }
 .jsoneditor div.outer {
-    width: 100%;
-    height: 100%;
-    margin: -35px 0 0;
-    padding: 35px 0 0;
-    overflow: hidden
+	width: 100%;
+	height: 100%;
+	margin: -35px 0 0;
+	padding: 35px 0 0;
+	overflow: hidden
 }
 .jsoneditor div.tree {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    overflow: auto
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: auto
 }
-.jsoneditor-contextmenu ul li,
-body,
-html {
-    overflow: hidden
+.jsoneditor-contextmenu ul li, body, html {
+	overflow: hidden
 }
 .jsoneditor textarea.text {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    box-sizing: border-box;
-    border: none;
-    background-color: #fff;
-    resize: none
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	box-sizing: border-box;
+	border: none;
+	background-color: #fff;
+	resize: none
 }
 .jsoneditor tr.highlight {
-    background-color: #FFFFAB
+	background-color: #FFFFAB
 }
 .jsoneditor div.tree button.dragarea {
-    background: url(img/jsoneditor-icons.png)-72px -72px;
-    cursor: move
+	background: url(img/jsoneditor-icons.png)-72px -72px;
+	cursor: move
 }
-.jsoneditor div.tree button.dragarea:focus,
-.jsoneditor div.tree button.dragarea:hover {
-    background-position: -72px -48px
+.jsoneditor div.tree button.dragarea:focus, .jsoneditor div.tree button.dragarea:hover {
+	background-position: -72px -48px
 }
-.jsoneditor td,
-.jsoneditor th,
-.jsoneditor tr {
-    padding: 0;
-    margin: 0
+.jsoneditor td, .jsoneditor th, .jsoneditor tr {
+	padding: 0;
+	margin: 0
 }
-.jsoneditor td,
-.jsoneditor td.tree {
-    vertical-align: top
+.jsoneditor td, .jsoneditor td.tree {
+	vertical-align: top
 }
-.jsoneditor .field,
-.jsoneditor .value,
-.jsoneditor td,
-.jsoneditor textarea,
-.jsoneditor th {
-    font-family: droid sans mono, monospace, courier new, courier, sans-serif;
-    font-size: 10pt;
-    color: #1A1A1A
+.jsoneditor .field, .jsoneditor .value, .jsoneditor td, .jsoneditor textarea, .jsoneditor th {
+	font-family: droid sans mono, monospace, courier new, courier, sans-serif;
+	font-size: 10pt;
+	color: #1A1A1A
 }
-.jsoneditor .menu a,
-.jsoneditor .menu button,
-body,
-html {
-    font-family: arial, sans-serif
+.jsoneditor .menu a, .jsoneditor .menu button, body, html {
+	font-family: arial, sans-serif
 }
 .jsoneditor-contextmenu {
-    position: absolute;
-    z-index: 99999
+	position: absolute;
+	z-index: 99999
 }
 .jsoneditor-contextmenu ul {
-    position: relative;
-    left: 0;
-    top: 0;
-    width: 124px;
-    background: #fff;
-    border: 1px solid #d3d3d3;
-    list-style: none;
-    margin: 0;
-    padding: 0
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 124px;
+	background: #fff;
+	border: 1px solid #d3d3d3;
+	list-style: none;
+	margin: 0;
+	padding: 0
 }
 .jsoneditor-contextmenu ul li button {
-    padding: 0;
-    margin: 0;
-    width: 124px;
-    height: 24px;
-    border: none;
-    cursor: pointer;
-    color: #4d4d4d;
-    background: 0 0;
-    line-height: 26px;
-    text-align: left
+	padding: 0;
+	margin: 0;
+	width: 124px;
+	height: 24px;
+	border: none;
+	cursor: pointer;
+	color: #4d4d4d;
+	background: 0 0;
+	line-height: 26px;
+	text-align: left
 }
 .jsoneditor-contextmenu ul li button::-moz-focus-inner {
-    padding: 0;
-    border: 0
+padding:0;
+border:0
 }
-.jsoneditor-contextmenu ul li button:focus,
-.jsoneditor-contextmenu ul li button:hover {
-    color: #1a1a1a;
-    background-color: #f5f5f5;
-    outline: 0
+.jsoneditor-contextmenu ul li button:focus, .jsoneditor-contextmenu ul li button:hover {
+	color: #1a1a1a;
+	background-color: #f5f5f5;
+	outline: 0
 }
 .jsoneditor-contextmenu ul li button.default {
-    width: 92px
+	width: 92px
 }
 .jsoneditor-contextmenu ul li button.expand {
-    float: right;
-    width: 32px;
-    height: 24px;
-    border-left: 1px solid #e5e5e5
+	float: right;
+	width: 32px;
+	height: 24px;
+	border-left: 1px solid #e5e5e5
 }
 .jsoneditor-contextmenu div.icon {
-    float: left;
-    width: 24px;
-    height: 24px;
-    border: none;
-    padding: 0;
-    margin: 0;
-    background-image: url(img/jsoneditor-icons.png)
+	float: left;
+	width: 24px;
+	height: 24px;
+	border: none;
+	padding: 0;
+	margin: 0;
+	background-image: url(img/jsoneditor-icons.png)
 }
 .jsoneditor-contextmenu ul li button div.expand {
-    float: right;
-    width: 24px;
-    height: 24px;
-    padding: 0;
-    margin: 0 4px 0 0;
-    background: url(img/jsoneditor-icons.png)0 -72px;
-    opacity: .4
+	float: right;
+	width: 24px;
+	height: 24px;
+	padding: 0;
+	margin: 0 4px 0 0;
+	background: url(img/jsoneditor-icons.png)0 -72px;
+	opacity: .4
 }
-.jsoneditor-contextmenu ul li button.expand:focus div.expand,
-.jsoneditor-contextmenu ul li button.expand:hover div.expand,
-.jsoneditor-contextmenu ul li button:focus div.expand,
-.jsoneditor-contextmenu ul li button:hover div.expand,
-.jsoneditor-contextmenu ul li.selected div.expand {
-    opacity: 1
+.jsoneditor-contextmenu ul li button.expand:focus div.expand, .jsoneditor-contextmenu ul li button.expand:hover div.expand, .jsoneditor-contextmenu ul li button:focus div.expand, .jsoneditor-contextmenu ul li button:hover div.expand, .jsoneditor-contextmenu ul li.selected div.expand {
+	opacity: 1
 }
 .jsoneditor-contextmenu .separator {
-    height: 0;
-    border-top: 1px solid #e5e5e5;
-    padding-top: 5px;
-    margin-top: 5px
+	height: 0;
+	border-top: 1px solid #e5e5e5;
+	padding-top: 5px;
+	margin-top: 5px
 }
 .jsoneditor-contextmenu button.remove>.icon {
-    background-position: -24px -24px
+	background-position: -24px -24px
 }
-.jsoneditor-contextmenu button.remove:focus>.icon,
-.jsoneditor-contextmenu button.remove:hover>.icon {
-    background-position: -24px 0
+.jsoneditor-contextmenu button.remove:focus>.icon, .jsoneditor-contextmenu button.remove:hover>.icon {
+	background-position: -24px 0
 }
 .jsoneditor-contextmenu button.append>.icon {
-    background-position: 0 -24px
+	background-position: 0 -24px
 }
-.jsoneditor-contextmenu button.append:focus>.icon,
-.jsoneditor-contextmenu button.append:hover>.icon {
-    background-position: 0 0
+.jsoneditor-contextmenu button.append:focus>.icon, .jsoneditor-contextmenu button.append:hover>.icon {
+	background-position: 0 0
 }
 .jsoneditor-contextmenu button.insert>.icon {
-    background-position: 0 -24px
+	background-position: 0 -24px
 }
-.jsoneditor-contextmenu button.insert:focus>.icon,
-.jsoneditor-contextmenu button.insert:hover>.icon {
-    background-position: 0 0
+.jsoneditor-contextmenu button.insert:focus>.icon, .jsoneditor-contextmenu button.insert:hover>.icon {
+	background-position: 0 0
 }
 .jsoneditor-contextmenu button.duplicate>.icon {
-    background-position: -48px -24px
+	background-position: -48px -24px
 }
-.jsoneditor-contextmenu button.duplicate:focus>.icon,
-.jsoneditor-contextmenu button.duplicate:hover>.icon {
-    background-position: -48px 0
+.jsoneditor-contextmenu button.duplicate:focus>.icon, .jsoneditor-contextmenu button.duplicate:hover>.icon {
+	background-position: -48px 0
 }
 .jsoneditor-contextmenu button.sort-asc>.icon {
-    background-position: -168px -24px
+	background-position: -168px -24px
 }
-.jsoneditor-contextmenu button.sort-asc:focus>.icon,
-.jsoneditor-contextmenu button.sort-asc:hover>.icon {
-    background-position: -168px 0
+.jsoneditor-contextmenu button.sort-asc:focus>.icon, .jsoneditor-contextmenu button.sort-asc:hover>.icon {
+	background-position: -168px 0
 }
 .jsoneditor-contextmenu button.sort-desc>.icon {
-    background-position: -192px -24px
+	background-position: -192px -24px
 }
-.jsoneditor-contextmenu button.sort-desc:focus>.icon,
-.jsoneditor-contextmenu button.sort-desc:hover>.icon {
-    background-position: -192px 0
+.jsoneditor-contextmenu button.sort-desc:focus>.icon, .jsoneditor-contextmenu button.sort-desc:hover>.icon {
+	background-position: -192px 0
 }
 .jsoneditor-contextmenu ul li .selected {
-    background-color: #D5DDF6
+	background-color: #D5DDF6
 }
 .jsoneditor-contextmenu ul li ul {
-    display: none;
-    position: relative;
-    left: -10px;
-    top: 0;
-    border: none;
-    box-shadow: inset 0 0 10px rgba(128, 128, 128, .5);
-    padding: 0 10px;
-    -webkit-transition: all .3s ease-out;
-    -moz-transition: all .3s ease-out;
-    -o-transition: all .3s ease-out;
-    transition: all .3s ease-out
+	display: none;
+	position: relative;
+	left: -10px;
+	top: 0;
+	border: none;
+	box-shadow: inset 0 0 10px rgba(128,128,128,.5);
+	padding: 0 10px;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out
 }
 .jsoneditor-contextmenu ul li ul li button {
-    padding-left: 24px
+	padding-left: 24px
 }
-.jsoneditor-contextmenu ul li ul li button:focus,
-.jsoneditor-contextmenu ul li ul li button:hover {
-    background-color: #f5f5f5
+.jsoneditor-contextmenu ul li ul li button:focus, .jsoneditor-contextmenu ul li ul li button:hover {
+	background-color: #f5f5f5
 }
 .jsoneditor-contextmenu button.type-string>.icon {
-    background-position: -144px -24px
+	background-position: -144px -24px
 }
-.jsoneditor-contextmenu button.type-string.selected>.icon,
-.jsoneditor-contextmenu button.type-string:focus>.icon,
-.jsoneditor-contextmenu button.type-string:hover>.icon {
-    background-position: -144px 0
+.jsoneditor-contextmenu button.type-string.selected>.icon, .jsoneditor-contextmenu button.type-string:focus>.icon, .jsoneditor-contextmenu button.type-string:hover>.icon {
+	background-position: -144px 0
 }
 .jsoneditor-contextmenu button.type-auto>.icon {
-    background-position: -120px -24px
+	background-position: -120px -24px
 }
-.jsoneditor-contextmenu button.type-auto.selected>.icon,
-.jsoneditor-contextmenu button.type-auto:focus>.icon,
-.jsoneditor-contextmenu button.type-auto:hover>.icon {
-    background-position: -120px 0
+.jsoneditor-contextmenu button.type-auto.selected>.icon, .jsoneditor-contextmenu button.type-auto:focus>.icon, .jsoneditor-contextmenu button.type-auto:hover>.icon {
+	background-position: -120px 0
 }
 .jsoneditor-contextmenu button.type-object>.icon {
-    background-position: -72px -24px
+	background-position: -72px -24px
 }
-.jsoneditor-contextmenu button.type-object.selected>.icon,
-.jsoneditor-contextmenu button.type-object:focus>.icon,
-.jsoneditor-contextmenu button.type-object:hover>.icon {
-    background-position: -72px 0
+.jsoneditor-contextmenu button.type-object.selected>.icon, .jsoneditor-contextmenu button.type-object:focus>.icon, .jsoneditor-contextmenu button.type-object:hover>.icon {
+	background-position: -72px 0
 }
 .jsoneditor-contextmenu button.type-array>.icon {
-    background-position: -96px -24px
+	background-position: -96px -24px
 }
-.jsoneditor-contextmenu button.type-array.selected>.icon,
-.jsoneditor-contextmenu button.type-array:focus>.icon,
-.jsoneditor-contextmenu button.type-array:hover>.icon {
-    background-position: -96px 0
+.jsoneditor-contextmenu button.type-array.selected>.icon, .jsoneditor-contextmenu button.type-array:focus>.icon, .jsoneditor-contextmenu button.type-array:hover>.icon {
+	background-position: -96px 0
 }
 .jsoneditor-contextmenu button.type-modes>.icon {
-    background-image: none;
-    width: 6px
+	background-image: none;
+	width: 6px
 }
 .jsoneditor .menu {
-    width: 100%;
-    height: 35px;
-    padding: 2px;
-    margin: 0;
-    overflow: hidden;
-    color: #1A1A1A;
-    background-color: #D5DDF6;
-    border-bottom: 1px solid #97B0F8
+	width: 100%;
+	height: 35px;
+	padding: 2px;
+	margin: 0;
+	overflow: hidden;
+	color: #1A1A1A;
+	background-color: #D5DDF6;
+	border-bottom: 1px solid #97B0F8
 }
 .jsoneditor .menu button {
-    width: 26px;
-    height: 26px;
-    margin: 2px;
-    padding: 0;
-    border-radius: 2px;
-    border: 1px solid #aec0f8;
-    background: url(img/jsoneditor-icons.png)#e3eaf6;
-    color: #4D4D4D;
-    opacity: .8;
-    font-size: 10pt;
-    float: left
+	width: 26px;
+	height: 26px;
+	margin: 2px;
+	padding: 0;
+	border-radius: 2px;
+	border: 1px solid #aec0f8;
+	background: url(img/jsoneditor-icons.png)#e3eaf6;
+	color: #4D4D4D;
+	opacity: .8;
+	font-size: 10pt;
+	float: left
 }
 .jsoneditor .menu button:hover {
-    background-color: #f0f2f5
+	background-color: #f0f2f5
 }
-.jsoneditor .menu button:active,
-.jsoneditor .menu button:focus {
-    background-color: #fff
+.jsoneditor .menu button:active, .jsoneditor .menu button:focus {
+	background-color: #fff
 }
 .jsoneditor .menu button:disabled {
-    background-color: #e3eaf6
+	background-color: #e3eaf6
 }
 .jsoneditor .menu button.collapse-all {
-    background-position: 0 -96px
+	background-position: 0 -96px
 }
 .jsoneditor .menu button.expand-all {
-    background-position: 0 -120px
+	background-position: 0 -120px
 }
 .jsoneditor .menu button.undo {
-    background-position: -24px -96px
+	background-position: -24px -96px
 }
 .jsoneditor .menu button.undo:disabled {
-    background-position: -24px -120px
+	background-position: -24px -120px
 }
 .jsoneditor .menu button.redo {
-    background-position: -48px -96px
+	background-position: -48px -96px
 }
 .jsoneditor .menu button.redo:disabled {
-    background-position: -48px -120px
+	background-position: -48px -120px
 }
 .jsoneditor .menu button.compact {
-    background-position: -72px -96px
+	background-position: -72px -96px
 }
 .jsoneditor .menu button.format {
-    background-position: -72px -120px
+	background-position: -72px -120px
 }
 .jsoneditor .menu button.modes {
-    background-image: none;
-    width: auto;
-    padding-left: 6px;
-    padding-right: 6px
+	background-image: none;
+	width: auto;
+	padding-left: 6px;
+	padding-right: 6px
 }
 .jsoneditor .menu button.separator {
-    margin-left: 10px
+	margin-left: 10px
 }
 .jsoneditor .menu a {
-    font-size: 10pt;
-    color: #fff;
-    /*color: #97B0F8;*/
-    vertical-align: middle
+	font-size: 10pt;
+	color: #97B0F8;
+	vertical-align: middle
 }
 .jsoneditor .menu a:hover {
-    /*color: red*/
-    color: #3d4970;
+	color: red
 }
 .jsoneditor .menu a.poweredBy {
-    font-size: 10pt;
-    position: absolute;
-    right: 0;
-    top: 0;
-    display: block;
-    line-height: 34px;
-    height:34px;
-    width: 60px;
-    text-align: center;
-    text-decoration: none;
-    background-color: #bac6ee;
-    border-left:1px solid #97b0f8;
-    /*border: 1px solid #ccc;*/
-    /*border-radius: 3px;*/
-    /*padding: 10px*/
+	font-size: 10pt;
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 10px
 }
-.jsoneditor .search .results,
-.jsoneditor .search input {
-    font-family: arial, sans-serif;
-    font-size: 10pt;
-    color: #1A1A1A;
-    background: 0 0
+.jsoneditor .search .results, .jsoneditor .search input {
+	font-family: arial, sans-serif;
+	font-size: 10pt;
+	color: #1A1A1A;
+	background: 0 0
 }
 .jsoneditor .search {
-    position: absolute;
-    right: 2px;
-    top: 2px
+	position: absolute;
+	right: 2px;
+	top: 2px
 }
 .jsoneditor .search .frame {
-    border: 1px solid #97B0F8;
-    background-color: #fff;
-    padding: 0 2px;
-    margin: 0
+	border: 1px solid #97B0F8;
+	background-color: #fff;
+	padding: 0 2px;
+	margin: 0
 }
 .jsoneditor .search .frame table {
-    border-collapse: collapse
+	border-collapse: collapse
 }
 .jsoneditor .search input {
-    width: 120px;
-    border: none;
-    outline: 0;
-    margin: 1px
+	width: 120px;
+	border: none;
+	outline: 0;
+	margin: 1px
 }
 .jsoneditor .search .results {
-    color: #4d4d4d;
-    padding-right: 5px;
-    line-height: 24px
+	color: #4d4d4d;
+	padding-right: 5px;
+	line-height: 24px
 }
 .jsoneditor .search button {
-    width: 16px;
-    height: 24px;
-    padding: 0;
-    margin: 0;
-    border: none;
-    background: url(img/jsoneditor-icons.png);
-    vertical-align: top
+	width: 16px;
+	height: 24px;
+	padding: 0;
+	margin: 0;
+	border: none;
+	background: url(img/jsoneditor-icons.png);
+	vertical-align: top
 }
 .jsoneditor .search button:hover {
-    background-color: transparent
+	background-color: transparent
 }
 .jsoneditor .search button.refresh {
-    width: 18px;
-    background-position: -99px -73px
+	width: 18px;
+	background-position: -99px -73px
 }
 .jsoneditor .search button.next {
-    cursor: pointer;
-    background-position: -124px -73px
+	cursor: pointer;
+	background-position: -124px -73px
 }
 .jsoneditor .search button.next:hover {
-    background-position: -124px -49px
+	background-position: -124px -49px
 }
 .jsoneditor .search button.previous {
-    cursor: pointer;
-    background-position: -148px -73px;
-    margin-right: 2px
+	cursor: pointer;
+	background-position: -148px -73px;
+	margin-right: 2px
 }
 .jsoneditor .search button.previous:hover {
-    background-position: -148px -49px
+	background-position: -148px -49px
 }
-div.prompt-background,
-div.prompt-overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 999
+div.prompt-background, div.prompt-overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999
 }
 div.prompt-overlay {
-    background-color: gray;
-    opacity: .2;
-    filter: alpha(opacity=20)
+	background-color: gray;
+	opacity: .2;
+	filter: alpha(opacity=20)
 }
 div.prompt-border {
-    width: 410px;
-    margin: 100px auto;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid gray;
-    border-radius: 2px;
-    -moz-box-shadow: 2px 2px 12px rgba(128, 128, 128, .3);
-    -webkit-box-shadow: 2px 2px 12px rgba(128, 128, 128, .3)
+	width: 410px;
+	margin: 100px auto;
+	padding: 20px;
+	background-color: #fff;
+	border: 1px solid gray;
+	border-radius: 2px;
+	-moz-box-shadow: 2px 2px 12px rgba(128,128,128,.3);
+	-webkit-box-shadow: 2px 2px 12px rgba(128,128,128,.3)
 }
 div.prompt-title {
-    font-weight: 700
+	font-weight: 700
 }
 div.prompt-description {
-    color: gray;
-    margin: 30px 0 0
+	color: gray;
+	margin: 30px 0 0
 }
 div.prompt-contents {
-    margin: 30px 0
+	margin: 30px 0
 }
 div.prompt-buttons {
-    text-align: right
+	text-align: right
 }
-#footer,
-#splitter {
-    text-align: center
+#footer, #splitter {
+	text-align: center
 }
 input.prompt-field[type=file] {
-    width: 400px;
-    padding: 3px
+	width: 400px;
+	padding: 3px
 }
 input.prompt-field[type=text] {
-    width: 400px;
-    border: 1px solid #d3d3d3;
-    border-radius: 2px;
-    padding: 3px
+	width: 400px;
+	border: 1px solid #d3d3d3;
+	border-radius: 2px;
+	padding: 3px
 }
-input.prompt-cancel,
-input.prompt-submit {
-    margin-left: 10px
+input.prompt-cancel, input.prompt-submit {
+	margin-left: 10px
 }
-body,
-html {
-    font-size: 11pt;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0
+body, html {
+	font-size: 11pt;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0
 }
 span.header-light {
-    color: gray
+	color: gray
 }
 #header {
-    width: 100%;
-    height: 40px;
-    background: url(img/header_background.png)#4D4D4D;
-    color: #fff
+	width: 100%;
+	height: 40px;
+	background: url(img/header_background.png)#4D4D4D;
+	color: #fff
 }
 #logo {
-    height: 32px;
-    margin: 4px 10px;
-    border: none
+	height: 32px;
+	margin: 4px 10px;
+	border: none
 }
 #name-menu {
-    position: absolute;
-    left: 220px;
-    top: 7px
+	position: absolute;
+	left: 220px;
+	top: 7px
 }
 #name-menu div {
-    display: inline-block
+	display: inline-block
 }
 #name {
-    line-height: 24px;
-    color: #fff;
-    padding: 0 10px;
-    border: 1px solid #737373;
-    border-radius: 3px;
-    background: rgba(115, 115, 115, .5);
-    -moz-box-shadow: inset 0 0 10px #000;
-    -webkit-box-shadow: inset 0 0 10px #000;
-    box-shadow: inset 0 0 10px #000;
-    visibility: hidden
+	line-height: 24px;
+	color: #fff;
+	padding: 0 10px;
+	border: 1px solid #737373;
+	border-radius: 3px;
+	background: rgba(115,115,115,.5);
+	-moz-box-shadow: inset 0 0 10px #000;
+	-webkit-box-shadow: inset 0 0 10px #000;
+	box-shadow: inset 0 0 10px #000;
+	visibility: hidden
 }
-#name-status,
-#name-status a {
-    color: grey
+#name-status, #name-status a {
+	color: grey
 }
 #name-status a:hover {
-    color: red
+	color: red
 }
 #menu {
-    position: absolute;
-    top: 5px;
-    right: 15px;
-    font-size: 11pt
+	position: absolute;
+	top: 5px;
+	right: 15px;
+	font-size: 11pt
 }
 #menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    clear: both
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	clear: both
 }
 #menu ul li {
-    color: #e6e6e6;
-    background: 0 0;
-    border: none;
-    border-right: 1px solid #737373;
-    height: 30px;
-    padding: 0;
-    margin: 0;
-    float: left;
-    position: relative
+	color: #e6e6e6;
+	background: 0 0;
+	border: none;
+	border-right: 1px solid #737373;
+	height: 30px;
+	padding: 0;
+	margin: 0;
+	float: left;
+	position: relative
 }
 #menu ul li:first-child {
-    border-left: 1px solid #737373
+	border-left: 1px solid #737373
 }
 #menu ul li:hover {
-    color: #fff;
-    background-color: #737373
+	color: #fff;
+	background-color: #737373
 }
 #menu ul li ul {
-    display: none;
-    position: absolute;
-    top: 30px;
-    left: 0;
-    z-index: 999;
-    background: #f5f5f5;
-    border: 1px solid #d3d3d3;
-    box-shadow: 0 0 15px rgba(128, 128, 128, .5)
+	display: none;
+	position: absolute;
+	top: 30px;
+	left: 0;
+	z-index: 999;
+	background: #f5f5f5;
+	border: 1px solid #d3d3d3;
+	box-shadow: 0 0 15px rgba(128,128,128,.5)
 }
-#menu a,
-#menu ul li:hover>ul {
-    display: block
+#menu a, #menu ul li:hover>ul {
+	display: block
 }
 #menu ul li ul li {
-    color: #737373;
-    background: 0 0;
-    border: none;
-    margin: 0;
-    padding: 0;
-    width: 120px
+	color: #737373;
+	background: 0 0;
+	border: none;
+	margin: 0;
+	padding: 0;
+	width: 120px
 }
-#menu a,
-#menu ul li ul #filesList div.file a {
-    padding: 6px 10px
+#menu a, #menu ul li ul #filesList div.file a {
+	padding: 6px 10px
 }
 #menu ul li ul li:first-child {
-    border-left: none
+	border-left: none
 }
 #menu ul li ul li:hover {
-    color: #737373;
-    background-color: #fff
+	color: #737373;
+	background-color: #fff
 }
 #menu a {
-    cursor: pointer;
-    color: #fff
+	cursor: pointer;
+	color: #fff
 }
 #menu ul li ul li a {
-    color: #737373
+	color: #737373
 }
 #menu ul li #openMenu li {
-    width: 160px
+	width: 160px
 }
 #menu ul li ul #filesList {
-    border-top: 1px solid #d3d3d3;
-    margin-top: 10px;
-    height: auto;
-    max-height: 300px;
-    overflow-x: hidden;
-    overflow-y: auto
+	border-top: 1px solid #d3d3d3;
+	margin-top: 10px;
+	height: auto;
+	max-height: 300px;
+	overflow-x: hidden;
+	overflow-y: auto
 }
-#auto,
-#contents,
-#footer {
-    overflow: hidden
+#auto, #contents, #footer {
+	overflow: hidden
 }
 #menu ul li #openMenu li div.file {
-    position: relative
+	position: relative
 }
 #menu ul li ul #filesList div.file a:hover {
-    color: red;
-    text-decoration: underline
+	color: red;
+	text-decoration: underline
 }
-a.footer,
-a.header {
-    text-decoration: none
+a.footer, a.header {
+	text-decoration: none
 }
 #menu ul li ul #filesList div.file:first-child a {
-    padding-top: 16px
+	padding-top: 16px
 }
 #menu ul li ul #filesList div.file:last-child a {
-    padding-bottom: 16px
+	padding-bottom: 16px
 }
 #menu ul li ul #filesList div.file a.open {
-    margin-right: 30px
+	margin-right: 30px
 }
 #menu ul li ul #filesList div.file a.remove {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 30px;
-    width: 10px;
-    padding: 0 10px;
-    line-height: 24px;
-    font-size: 18px;
-    font-weight: 700;
-    text-decoration: none
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 30px;
+	width: 10px;
+	padding: 0 10px;
+	line-height: 24px;
+	font-size: 18px;
+	font-weight: 700;
+	text-decoration: none
 }
 #menu ul li #openMenu li div.file:hover a.remove {
-    display: block
+	display: block
 }
 #menu ul li ul #filesList div.file:first-child a.remove {
-    padding-top: 10px
+	padding-top: 10px
 }
 span.dropDownIcon {
-    font-size: 75%;
-    margin-left: 2px
+	font-size: 75%;
+	margin-left: 2px
 }
 #menu #open {
-    cursor: default
+	cursor: default
 }
 #auto {
-    width: 100%;
-    height: 100%;
-/*    margin: -40px 0 -24px;
-    padding: 40px 0 24px*/
+	width: 100%;
+	height: 100%;
+	margin: -40px 0 -10px;
+	padding: 40px 0 10px
 }
 #contents {
-    width: 100%;
-    height: 100%
+	width: 100%;
+	height: 100%
 }
-#codeEditor,
-#treeEditor {
-    height: 100%;
-    width: 400px
+#codeEditor, #treeEditor {
+	height: 100%;
+	width: 400px
 }
 #codeEditor {
-    float: left;
-    padding: 15px 0 15px 15px
+	float: left;
+	padding: 15px 0 15px 15px
 }
 #treeEditor {
-    float: left;
-    padding: 15px 15px 15px 0
+	float: left;
+	padding: 15px 15px 15px 0
 }
 #splitter {
-    float: left;
-    height: 100%;
-    padding: 15px
+	float: left;
+	height: 100%;
+	padding: 15px
 }
 #splitter #buttons {
-    margin: 0 0 15px
+	margin: 0 0 15px
 }
 #splitter #toTree {
-    margin: 40px 0 0
+	margin: 40px 0 0
 }
 #splitter #toCode {
-    margin: 20px 0 0
+	margin: 20px 0 0
 }
 #splitter #drag {
-    font-size: 32px;
-    color: #d3d3d3;
-    border-radius: 3px;
-    min-width: 24px;
-    cursor: col-resize
+	font-size: 32px;
+	color: #d3d3d3;
+	border-radius: 3px;
+	min-width: 24px;
+	cursor: col-resize
 }
-#splitter #drag.active,
-#splitter #drag:hover {
-    color: gray;
-    background-color: #f5f5f5
+#splitter #drag.active, #splitter #drag:hover {
+	color: gray;
+	background-color: #f5f5f5
 }
 #footer {
-    width: 100%;
-    height: 23px;
-    font-size: 10pt;
-    color: #BFBFBF;
-    border-top: 1px solid #d3d3d3;
-    background-color: #F5F5F5
+	width: 100%;
+	height: 23px;
+	font-size: 10pt;
+	color: #BFBFBF;
+	border-top: 1px solid #d3d3d3;
+	background-color: #F5F5F5
 }
 #footer-inner {
-    margin: 4px
+	margin: 4px
 }
 a.header {
-    color: #fff
+	color: #fff
 }
 a.footer {
-    color: #BFBFBF
+	color: #BFBFBF
 }
-div.error,
-div.error a {
-    color: red
+div.error, div.error a {
+	color: red
 }
 a.footer:hover {
-    color: red;
-    text-decoration: underline
+	color: red;
+	text-decoration: underline
 }
 #ad {
-    float: right;
-    right: 15px;
-    padding: 15px 0;
-    position: relative
+	float: right;
+	right: 15px;
+	padding: 15px 0;
+	position: relative
 }
 #chromeAppInfo {
-    line-height: normal;
-    padding: 0 5px 20px
+	line-height: normal;
+	padding: 0 5px 20px
 }
-div.error,
-div.notification {
-    border-radius: 2px;
-    padding: 5px;
-    margin: 5px;
-    box-shadow: 0 0 15px rgba(128, 128, 128, .5)
+div.error, div.notification {
+	border-radius: 2px;
+	padding: 5px;
+	margin: 5px;
+	box-shadow: 0 0 15px rgba(128,128,128,.5)
 }
 div.error {
-    background-color: pink;
-    border: 1px solid red
+	background-color: pink;
+	border: 1px solid red
 }
 div.error a:hover {
-    color: #8b0000
+	color: #8b0000
 }
 div.notification {
-    color: #1a1a1a;
-    background-color: #FFFFAB;
-    border: 1px solid #e6d600
+	color: #1a1a1a;
+	background-color: #FFFFAB;
+	border: 1px solid #e6d600
 }
 pre.error {
-    margin: 0 0 10px;
-    white-space: pre-wrap;
-    font-family: droid sans mono, monospace, courier new, courier, sans-serif;
-    font-size: 10pt
+	margin: 0 0 10px;
+	white-space: pre-wrap;
+	font-family: droid sans mono, monospace, courier new, courier, sans-serif;
+	font-size: 10pt
 }
 a.error {
-    color: red;
-    font-size: 8pt
+	color: red;
+	font-size: 8pt
 }
 button.convert {
-    cursor: default;
-    padding: 2px
+	cursor: default;
+	padding: 2px
 }
-div.convert-left,
-div.convert-right {
-    width: 24px;
-    height: 24px;
-    margin: 0
+div.convert-left, div.convert-right {
+	width: 24px;
+	height: 24px;
+	margin: 0
 }
 div.convert-right {
-    background: url(img/jsoneditor-icons.png)0 -48px
+	background: url(img/jsoneditor-icons.png)0 -48px
 }
 div.convert-left {
-    background: url(img/jsoneditor-icons.png)-24px -48px
+	background: url(img/jsoneditor-icons.png)-24px -48px
 }
 .jsoneditor .search input {
-    background: 0 0
+	background: 0 0
+}
+#reloadBtn {
+	display: block;
+	position: absolute;
+	height: 28px;
+	width: 30px;
+	top: 1px;
+	right: 1px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 16px 16px;
+	background-color:#fff;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QzFBMkEyNzlFQTREMTFFNEJBMURBMkY4NzMwNjcwNDkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QzFBMkEyN0FFQTREMTFFNEJBMURBMkY4NzMwNjcwNDkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDMUEyQTI3N0VBNEQxMUU0QkExREEyRjg3MzA2NzA0OSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDMUEyQTI3OEVBNEQxMUU0QkExREEyRjg3MzA2NzA0OSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PonT02IAAAlrSURBVHja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)
+}
+
+.innerBox {
+	margin: 15px 15px 0;
+	position: relative;
+}
+
+#inputURL {
+	width:100%;
+	padding:0;
+	margin:0;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	padding:0 2em 0 0.5em;
+	box-sizing:border-box;
+	border: 1px solid #97b0f8;
 }
 
 /*.error{
