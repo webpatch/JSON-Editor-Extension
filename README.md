@@ -3,7 +3,7 @@
 >The JSON Editor is fork from [jsoneditoronline.org](http://jsoneditoronline.org/)
 
 ##Privew
-
+![Preview gif](https://raw.githubusercontent.com/webpatch/JSON-Editor-Extension/master/screen/preview.gif)
 
 ##Feature
 
