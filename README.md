@@ -17,7 +17,10 @@
 
 ##Test Link
 
-EN: [http://api.openweathermap.org/data/2.5/forecast?q=London,uk](http://api.openweathermap.org/data/2.5/forecast?q=London,uk)  
+EN: <a href="http://api.openweathermap.org/data/2.5/forecast?q=London,uk" target="_blank">http://api.openweathermap.org/data/2.5/forecast?q=London,uk</a>
 
-CN: [http://www.pm25.in/api/querys/pm10.json?city=深圳&token=5j1znBVAsnSf5xQyNQyq&avg](http://www.pm25.in/api/querys/pm10.json?city=深圳&token=5j1znBVAsnSf5xQyNQyq&avg)
+CN: <a href="http://www.pm25.in/api/querys/pm10.json?city=深圳&token=5j1znBVAsnSf5xQyNQyq&avg" target="_blank">http://www.pm25.in/api/querys/pm10.json?city=深圳&token=5j1znBVAsnSf5xQyNQyq&avg</a>
+
+
+
 
