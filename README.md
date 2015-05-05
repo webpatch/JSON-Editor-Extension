@@ -14,3 +14,10 @@
 1. [Download the extension](https://github.com/webpatch/JSON-Editor-Extension/raw/master/release/json-editor.xpi)
 2. Drag `json-editor.xpi` into firefox
 3. Wait a second, and click install.
+
+##Test Link
+
+EN: [http://api.openweathermap.org/data/2.5/forecast?q=London,uk](http://api.openweathermap.org/data/2.5/forecast?q=London,uk)  
+
+CN: [http://www.pm25.in/api/querys/pm10.json?city=深圳&token=5j1znBVAsnSf5xQyNQyq&avg](http://www.pm25.in/api/querys/pm10.json?city=深圳&token=5j1znBVAsnSf5xQyNQyq&avg)
+
