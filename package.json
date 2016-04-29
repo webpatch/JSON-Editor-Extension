@@ -1,9 +1,9 @@
 {
   "name": "json-editor",
   "title": "JSON-Editor",
-  "id": "jid1-9q5JgBwBxReZAg",
   "description": "a basic add-on",
   "author": "",
   "license": "MPL 2.0",
-  "version": "0.1"
+  "version": "0.1",
+  "main": "lib/main.js"
 }
