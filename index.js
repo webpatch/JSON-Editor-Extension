@@ -3,8 +3,6 @@ var treeContainer = document.getElementById("treeEditor");
 var codeContainer = document.getElementById("codeEditor");
 
 function onBodyMove(e) {
-  // console.log(e.pageX);
-  // if()
   let w = e.pageX - 10;
   const tw = document.documentElement.clientWidth - 30 - 250;
   if (w > tw) {
@@ -12,10 +10,13 @@ function onBodyMove(e) {
   } else if (w < 250) {
     w = 250;
   }
-  codeContainer.setAttribute('style', `flex: 0 0 ${w}px`)
+  codeContainer.setAttribute('style', `flex: 0 0 ${w}px`);
+  treeEditor.refresh();
+  codeEditor.aceEditor.resize(true);
 }
 
 function onBodyUp() {
+  split.classList.remove('hover');
   document.body.classList.remove('block');
   document.body.removeEventListener('mousemove', onBodyMove);
 }
@@ -23,8 +24,9 @@ function onBodyUp() {
 document.body.addEventListener('mouseup', onBodyUp);
 
 split.addEventListener('mousedown', function (e) {
-  console.log(e.pageX, e.pageY);
+  // console.log(e.pageX, e.pageY);
   document.body.classList.add('block');
+  split.classList.add('hover');
   document.body.addEventListener('mousemove', onBodyMove);
 });
 
@@ -32,21 +34,21 @@ var options = {
   mode: 'tree',
   onChange: function () {
     try {
-      codeEditor.set(treeEditor.get());
+      // codeEditor.set(treeEditor.get());
     } catch (e) {
       // codeEditor.set({});
     }
   }
 };
 var treeEditor = new JSONEditor(treeContainer, options);
-
+console.log(treeEditor);
 var codeOptions = {
   mode: "code",
   onChange: function () {
     console.log('changeeeeee');
     console.log();
     try {
-      treeEditor.set(codeEditor.get());
+      // treeEditor.set(codeEditor.get());
     } catch (e) {
       // treeEditor.set({});
     }
@@ -61,9 +63,10 @@ var json = {
   "Null": null,
   "Number": 123,
   "Object": { "a": "b", "c": "d" },
-  "String": "Hello World"
+  "String": "Hello World 344444444444444444444444444444444444444sdfasdfasdfasdf"
 };
 
 codeEditor.set(json);
 treeEditor.set(json);
-
+// codeEditor.aceEditor.setReadOnly(true);
+// console.log(codeEditor);

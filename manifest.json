@@ -5,8 +5,8 @@
   "description": "Covert url to QR code.",
   "homepage_url": "https://github.com/webpatch/Tiny-QRCode-Builder",
   "icons": {
-    "48": "icons/qr-code@1.5x.png",
-    "96": "icons/qr-code@3x.png"
+    "48": "dot.svg",
+    "96": "dot.svg"
   },
   "background": {
     "scripts": [
@@ -19,7 +19,7 @@
     "clipboardRead"
   ],
   "browser_action": {
-    "default_icon": "icons/qr-code.png",
+    "default_icon": "dot.svg",
     "default_title": "JSON Editor"
   }
 }
