@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <title>Title</title>
+    <link href="dist/jsoneditor.min.css" rel="stylesheet" type="text/css" >
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .block {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+        }
+
+        .box {
+            display: flex;
+            height: 100%;
+            padding: 10px;
+        }
+
+        #codeEditor {
+            flex: 1;
+        }
+
+        #treeEditor {
+            flex: 1;
+        }
+
+        #split {
+            flex: 0 0 10px;
+            background-color: #eee;
+            border: 1px solid #ccc;
+            border-width: 1px 0 1px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div id="codeEditor"></div>
+    <div id="split"></div>
+    <div id="treeEditor"></div>
+</div>
+<script src="dist/jsoneditor.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
