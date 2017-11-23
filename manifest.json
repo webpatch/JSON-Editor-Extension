@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Elegant JSON Editor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Elegant JSON Editor.",
   "homepage_url": "https://github.com/webpatch/JSON-Editor-Extension",
   "icons": {
