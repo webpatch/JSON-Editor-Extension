@@ -3,9 +3,11 @@
 ## Install 
 
 ### Firefox 
-
+ 
+![preivew](https://github.com/webpatch/JSON-Editor-Extension/blob/master/preview/20171123-143428.png?raw=true)
+ 
 [Go to https://addons.mozilla.org](https://addons.mozilla.org/zh-CN/firefox/addon/elegant-json-editor/)
 
 ### Chrome
 
-
+[Click to download!](https://github.com/webpatch/JSON-Editor-Extension/blob/master/dist/JSON-Editor-Extension.crx?raw=true)
