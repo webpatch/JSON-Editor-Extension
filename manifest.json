@@ -1,12 +1,12 @@
 {
   "manifest_version": 2,
-  "name": "Tiny QRCode Builder",
-  "version": "1.1.5",
-  "description": "Covert url to QR code.",
-  "homepage_url": "https://github.com/webpatch/Tiny-QRCode-Builder",
+  "name": "Elegant JSON Editor",
+  "version": "1.0.0",
+  "description": "Elegant JSON Editor.",
+  "homepage_url": "https://github.com/webpatch/JSON-Editor-Extension",
   "icons": {
-    "48": "dot.svg",
-    "96": "dot.svg"
+    "48": "icons/48.png",
+    "96": "icons/96.png"
   },
   "background": {
     "scripts": [
@@ -15,11 +15,10 @@
   },
   "permissions": [
     "activeTab",
-    "tabs",
-    "clipboardRead"
+    "tabs"
   ],
   "browser_action": {
-    "default_icon": "dot.svg",
-    "default_title": "JSON Editor"
+    "default_icon": "icons/32.png",
+    "default_title": "Elegant JSON Editor"
   }
 }

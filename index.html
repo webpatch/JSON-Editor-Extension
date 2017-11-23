@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link href="dist/jsoneditor.min.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8" >
+    <title>Tiny JSON Editor</title>
+    <link href="editor/jsoneditor.css" rel="stylesheet" type="text/css" >
+    <link rel="shortcut icon" href="./icons/32.png" >
     <style>
         html, body {
             height: 100%;
-        }
-
-        body {
-            overflow: hidden;
         }
 
         * {
@@ -22,6 +19,7 @@
         .block {
             -webkit-user-select: none;
             -moz-user-select: none;
+            cursor: col-resize;
         }
 
         .block #codeEditor, .block #treeEditor {
@@ -48,13 +46,13 @@
 
         #split {
             flex: 0 0 10px;
-            /*background-color: #eee;*/
             border: 1px solid #fff;
             border-width: 0 2px 0 2px;
             border-radius: 2px;
             display: flex;
             align-items: center;
             justify-content: center;
+            cursor: col-resize;
         }
 
         #split:hover, #split.hover {
@@ -74,10 +72,10 @@
 <body>
 <div class="box">
     <div id="codeEditor"></div>
-    <div id="split"><img src="dot.svg" /></div>
+    <div id="split"><img src="images/dot.svg" /></div>
     <div id="treeEditor"></div>
 </div>
-<script src="dist/jsoneditor.js"></script>
+<script src="editor/jsoneditor.js"></script>
 <script src="index.js"></script>
 </body>
 </html>

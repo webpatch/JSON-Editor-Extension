@@ -6,11 +6,14 @@ if (typeof browser === 'undefined') {
   browser = chrome;
 }
 
+let tabID = -1;
+
 function openMyPage() {
-  console.log("injecting");
-  browser.tabs.create({
-    "url": "/index.html"
-  });
+  // browser.tabs.update(tabID, { active: true }).catch(() => {
+    browser.tabs.create({
+      "url": "/index.html",
+    }).then(t => tabID = t.id);
+  // });
 }
 
 /*

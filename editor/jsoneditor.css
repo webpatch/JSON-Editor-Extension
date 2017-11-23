@@ -34,6 +34,7 @@ div.jsoneditor-readonly {
   padding: 2px;
   margin: 1px;
   word-wrap: break-word;
+  word-break: break-all;
   float: left;
 }
 
