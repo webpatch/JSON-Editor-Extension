@@ -14,7 +14,7 @@
 [Click to download!](https://github.com/webpatch/JSON-Editor-Extension/blob/master/dist/JSON-Editor-Extension.crx?raw=true)
 
 
-### Changelog
+## Changelog
 
 #### 1.0.2
 
