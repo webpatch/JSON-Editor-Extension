@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8" >
     <title>Elegant JSON Editor</title>
-    <link href="editor/jsoneditor.css" rel="stylesheet" type="text/css" >
+    <link href="editor/jsoneditor.min.css" rel="stylesheet" type="text/css" >
     <link rel="shortcut icon" href="./icons/32.png" >
     <style>
         html, body {
             height: 100%;
+        }
+
+        body {
+            font-family: consolas, monospace, courier new, courier, sans-serif;
         }
 
         * {
@@ -22,7 +26,7 @@
             cursor: col-resize;
         }
 
-        .block #codeEditor, .block #treeEditor {
+        .block .codeEditor, .block .treeEditor {
             pointer-events: none;
         }
 
@@ -31,21 +35,33 @@
         }
 
         .box {
-            display: flex;
-            height: 100%;
-            padding: 10px;
+            margin: 10px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
         }
 
-        #codeEditor {
-            flex: 1;
+        .codeEditor {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
         }
 
-        #treeEditor {
-            flex: 1;
+        .treeEditor {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
         }
 
-        #split {
-            flex: 0 0 10px;
+        .split {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 10px;
             border: 1px solid #fff;
             border-width: 0 2px 0 2px;
             border-radius: 2px;
@@ -55,27 +71,27 @@
             cursor: col-resize;
         }
 
-        #split:hover, #split.hover {
+        .split:hover, .split.hover {
             background-color: #f5f5f5;
         }
 
-        #split img {
+        .split img {
             opacity: 0.2;
             pointer-events: none;
         }
 
-        #split:hover img, #split.hover img {
+        .split:hover img, .split.hover img {
             opacity: 0.6;
         }
     </style>
 </head>
 <body>
 <div class="box">
-    <div id="codeEditor"></div>
-    <div id="split"><img src="images/dot.svg" /></div>
-    <div id="treeEditor"></div>
+    <div id="codeEditor" class="codeEditor"></div>
+    <div id="split" class="split"><img src="images/dot.svg" /></div>
+    <div id="treeEditor" class="treeEditor"></div>
 </div>
-<script src="editor/jsoneditor.js"></script>
-<script src="index.js"></script>
+<script src="editor/jsoneditor.min.js"></script>
+<script src="js/json-editor.js"></script>
 </body>
 </html>

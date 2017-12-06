@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Elegant JSON Editor",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Elegant JSON Editor.",
   "homepage_url": "https://github.com/webpatch/JSON-Editor-Extension",
   "icons": {
@@ -20,5 +20,6 @@
   "browser_action": {
     "default_icon": "icons/32.png",
     "default_title": "Elegant JSON Editor"
-  }
+  },
+  "content_security_policy": "script-src 'self' blob:; object-src 'self';"
 }

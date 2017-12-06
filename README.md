@@ -12,3 +12,11 @@
 ### Chrome
 
 [Click to download!](https://github.com/webpatch/JSON-Editor-Extension/blob/master/dist/JSON-Editor-Extension.crx?raw=true)
+
+
+### Changelog
+
+#### 1.0.2
+
+* [ADD] Drag and drop to load JSON file.
+* [BUG] Fixed some bugs.

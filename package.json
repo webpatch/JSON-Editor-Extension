@@ -1,0 +1,20 @@
+{
+  "name": "JSON-Editor-Extension",
+  "version": "1.0.2",
+  "main": "index.js",
+  "repository": "https://github.com/webpatch/JSON-Editor-Extension.git",
+  "author": "webpatch <webpatch@sina.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --watch src/ build/build.js",
+    "build": "web-ext build --ignore-files yarn.lock package.json README.md dist/ build/ preview/ src/"
+  },
+  "dependencies": {
+    "fs-extra": "^4.0.2",
+    "rollup": "^0.52.0",
+    "rollup-plugin-buble": "^0.18.0",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "uglify-js": "^3.2.0"
+  }
+}
